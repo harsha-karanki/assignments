@@ -1,0 +1,26 @@
+<html>
+    <body>
+
+<script>
+"use strict";
+
+let user = {
+  name: "Harsha",
+  surname: "Vardhan",
+
+  get fullName() {
+    return `${this.name} ${this.surname}`;
+  },
+
+  set fullName(value) {
+    [this.name, this.surname] = value.split(" ");
+  }
+};
+
+user.fullName = "Harsha vardhan";
+
+alert(user.name); 
+alert(user.surname); 
+</script>
+</body>
+</html>
